@@ -1,13 +1,18 @@
-const { connectSession, qAsk, qAskReply } = require("rxq");
+//Nav
+$(() => {
+  $(".drawer-nav").on("click", function() {
+    $("#right-section").toggleClass("collapsed");
+    $(".sidebar span").toggle();
+  });
 
-const config = {
-    host: "localhost",
-    port: 19076,
-};
-
-// Engine session
-const session = connectSession(config);
-
-const global$ = session.global$;
-
-global$.pipe(qAsk("EngineVersion")).subscribe(console.log);
+  //NightMode Toggle
+  $(".nightmode").on("click", function() {
+    $("#left-section").toggleClass("night");
+    $("#nav").toggleClass("night");
+    $("#bottom-right").toggleClass("night");
+    $("#chart-wrapper").toggleClass("night");
+    $("#right-box").toggleClass("night");
+    $(".kpi").toggleClass("night");
+    $("#trend-container").toggleClass("night");
+  });
+});
