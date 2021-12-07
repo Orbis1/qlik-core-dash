@@ -1,0 +1,29 @@
+{
+  "name": "qlik-core-dash",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "rxjs": "^7.4.0",
+    "rxq": "^2.0.4"
+  },
+  "devDependencies": {
+    "eslint": "^8.3.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Orbis1/qlik-core-dash.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Orbis1/qlik-core-dash/issues"
+  },
+  "homepage": "https://github.com/Orbis1/qlik-core-dash#readme"
+}

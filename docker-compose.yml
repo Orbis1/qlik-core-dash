@@ -1,0 +1,11 @@
+version: "2"
+
+services:
+  engine:
+    image: qlikcore/engine:LATEST
+    restart: always
+    command: -S DocumentDirectory=/data -S AcceptEULA=yes
+    ports:
+      - "19076:9076"
+    volumes: 
+      - ./data:/data
